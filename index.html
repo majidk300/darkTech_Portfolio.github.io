@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+</head>
+<body>
+
+	<div class="mainbody">
+     <nav>
+     	<div class="logo navinline">DARK TEC</div>
+
+     	<ul class="navinline" id="sidenav">
+     		<div class="navsvertical">
+     		<li><a href="#">ABOUT</a></li>
+            <li><a href="#">SKILL</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="photo galary.html">PHOTOS</a></li>
+     	    <li><a href="#">CONTACT</a></li>
+     	    </div>
+     	</ul>
+
+     </nav>
+
+     <div class="bio">
+     	<img src="profile.jpg" class="profile">
+
+     	<h1>Md Majid Naseem</h1>
+
+     	<p>WEB DEVELOPER, GRAPHIC DESINER, PHOTOGRAPHY</p>
+
+     	<span class="btn"><a href="#">Sell me</a></span>
+
+     	<span class="btn"><a href="#">Hire me</a></span>
+      </div>
+     <!--bars icon-->
+      <div class="buttonbars" id="buttonbars" onclick="myFunction(this)">
+		<div class="bars1"></div>
+		<div class="bars2"></div>
+		<div class="bars3"></div>
+	</div>
+
+	</div>
+	
+	
+
+
+<script>
+var buttonbars=document.getElementById("buttonbars")
+var sidenav=document.getElementById("sidenav")
+
+buttonbars.onclick=function(){
+	if(sidenav.style.right=="-17.5rem"){
+       sidenav.style.right="0";
+	}
+
+	else{
+		sidenav.style.right="-17.5rem";
+	}
+}
+
+</script>
+	
+</body>
+</html>

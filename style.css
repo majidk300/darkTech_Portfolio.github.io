@@ -1,0 +1,208 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+html{
+	overflow:hidden;
+}
+
+
+.mainbody{
+	background-image:linear-gradient(to top, rgba(245,246,252,0.52),rgba(117,19,93,0.73)),url("star-image.jpg");
+    width:100%;
+    height:100vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.navinline{
+	display:inline-block;
+}
+
+.mainbody nav{
+	padding:25px;
+	width:80%;
+	margin:auto;
+	z-index: 111;
+}
+
+.mainbody nav .logo{
+	color:white;
+}
+
+.mainbody nav ul{
+	float:right;
+}
+
+.mainbody nav ul li{
+	display:inline-block;
+	list-style-type:none;
+}
+
+.mainbody nav ul li:first-child{
+	margin-right:30px;
+}
+
+.mainbody nav ul li:nth-child(2){
+	margin-right:30px;
+}
+
+.mainbody nav ul li:nth-child(3){
+	margin-right:30px;
+}
+
+.mainbody nav ul li:nth-child(4){
+	margin-right:30px;
+}
+
+.mainbody nav ul li a{
+   color:white;
+   text-decoration:none;
+   position: relative;
+  
+}
+
+.mainbody nav ul li a::after{
+	content:"";
+	position:absolute;
+	border-bottom:2px solid darkorange;
+	top:10px;
+	left:0;
+	height:15px;
+	width:0;
+	transition:all 0.5s ease;
+}
+
+.mainbody nav ul li a:hover:after{
+	width:100%;
+}
+
+.mainbody .buttonbars{
+	display:none;
+}
+
+.mainbody .bio{
+ position:absolute;
+ top:50%;
+ left:50%;
+ transform:translate(-50%,-50%);
+ text-align:center;
+}
+
+.mainbody .bio .profile{
+	width:8rem;
+	height:8rem;
+	border-radius:50% 50%;
+
+}
+
+.mainbody .bio h1{
+	color:white;
+	font-size:1.5rem;
+}
+
+.mainbody .bio p{
+	margin-top:10px;
+	color:white;
+	font-size:0.7rem;
+}
+
+.mainbody .bio .btn{
+	position:relative;
+	background-color:green;
+	transition:0.3s ease;
+	padding:8px 30px 8px 30px;
+    top:30px; 
+}
+
+.mainbody .bio .btn:hover{
+  background-color:darkorange;
+}
+
+.mainbody .bio .btn a{
+ color:white;
+ text-decoration: none;
+ font-size:0.8rem;
+}
+
+/*......resposive..resposive.......*/
+
+/*for 750px*/
+@media only screen and (max-width: 850px) {
+	body{
+		overflow:hidden;
+	}
+
+  .mainbody nav{
+    width: 100%;
+    padding:25px 0 25px 50px;
+    background-color:#220033;
+	
+  }
+
+  .mainbody nav .logo{
+	font-size:20px
+}
+
+  .mainbody nav ul{
+  position:relative;
+  background-color:#220033;
+  width:16rem;
+  height:100vh;
+  display:block;
+  z-index:111;
+  opacity:0.9;
+  right:-20rem;
+  opacity:0.9;
+  transition:all 0.5s ease;
+  }
+
+.mainbody nav ul li{
+	display:block;
+	width:100%;
+	padding:1rem 0 1rem 3rem;
+}
+
+.navsvertical{
+	position:absolute;
+	width:100%;
+	top:3.3rem;
+}
+
+.mainbody .buttonbars{
+	position:absolute;
+	top:22px;
+	right:40px;
+	color:white;
+	font-size:25px;
+	z-index:1111;
+	display:block;
+	display:inline-block;
+	cursor:pointer;
+}
+
+.bars1,.bars2,.bars3{
+  width:35px;
+  height:4px;
+  background-color:white;
+  margin:6px 0; 
+}
+
+}
+
+/*for 750px end*/
+
+/*for 480px */
+@media only screen and (max-width:460px){
+.mainbody .bio .btn{
+	display:inline-block;
+	margin:0 0 5px 0;
+}
+}
+/*for 480px end*/
+
+
+/*......resposive..resposive..END.....*/
